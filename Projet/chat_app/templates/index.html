@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat_app Room</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Choose the chat room you would like to enter!</h4>
+        <input id="roomname" type="text" size="100">
+        <input id="submit" type="button" value="Enter">
+    </div>
+
+
+    <script>
+        document.querySelector('#submit').onclick = function(e) {
+            var myRoom = document.querySelector('#roomname').value;
+            window.location.pathname = '' + myRoom + '/';
+        };
+    </script>
+
+</body>
+</html>
